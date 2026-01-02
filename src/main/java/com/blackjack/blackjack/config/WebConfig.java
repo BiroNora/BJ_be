@@ -5,10 +5,11 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
+
 @Configuration
 public class WebConfig implements WebMvcConfigurer {
 
-    @Value("${app.cors.allowed-origins}")
+    @Value("${APP_CORS_ALLOWED_ORIGINS}")
     private String[] allowedOrigins;
 
     @Override
@@ -17,6 +18,7 @@ public class WebConfig implements WebMvcConfigurer {
             .allowedOrigins(allowedOrigins)
             .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
             .allowedHeaders("*")
-            .allowCredentials(true);
+            .allowCredentials(true)
+            .maxAge(3600);
     }
 }
