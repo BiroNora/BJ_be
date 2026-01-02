@@ -16,7 +16,6 @@ import static com.blackjack.blackjack.common.GameConstants.INITIAL_TOKENS;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "*")
 public class PlayerController {
 
     private final PlayerRepository playerRepository;
