@@ -1,0 +1,1 @@
+A resilient, stateless Blackjack backend using Spring Boot and PostgreSQL. It ensures reliable gameplay through custom idempotency logic and a cloud-optimized architecture designed for seamless Vercel/Render integration.
