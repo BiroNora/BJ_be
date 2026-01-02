@@ -1,4 +1,4 @@
-package com.blackjack.blackjack.config;package com.blackjack.blackjack.config;
+package com.blackjack.blackjack.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
