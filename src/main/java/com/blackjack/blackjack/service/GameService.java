@@ -23,7 +23,6 @@ public class GameService {
     }
 
     // --- STANDARD ---
-    // VALÓS ÁG
     public GameState initializeNewRound(GameState state) {
         // 1. Kör állapotának nullázása (resetRoundState immutábilis)
         GameState currentGameState = gameStateManager.resetRoundState(state)
